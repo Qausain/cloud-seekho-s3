@@ -23,7 +23,6 @@ kubectl apply -f ./release/kubernetes-manifests.yaml --namespace dev
 
 kubectl get svc -w --namespace dev
 __________
-BASH
 Open http://<EXTERNAL_IP> in a new tab. You should see the homepage of the Online Boutique application.
 
 -----------------------------------------------------
