@@ -1,0 +1,17 @@
+First create a VM
+
+Name : apache
+   Zone : us-central1-a
+   Series : N1
+   Boot Disk : Linux 9 (stretch)
+
+   Tick : Allow HTTP Traffic
+          Allow HTTPS Traffic
+
+
+
+Commands to use on SSH terminal
+sudo su -
+apt-get update
+apt-get install apache2 -y
+service --status-all
