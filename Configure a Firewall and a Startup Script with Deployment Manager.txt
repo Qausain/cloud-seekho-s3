@@ -1,7 +1,9 @@
 OPEN
 vim qwiklabs.jinja
 
-Delete all the content
+AFTER OPENING PRESS INSERT KEY THEN DEL KEY
+TO
+Delete all the content THEN PRESS INSERT
 & paste
 
 resources:
@@ -50,9 +52,15 @@ resources:
     - 0.0.0.0/0
 
 SAVE & EXIT
+(FOR SAVE PRESS "ESC" KEY> THEN ENTER :WQ> THEN PRESS ENTER)
 
 NOW OPEN
 vim qwiklabs.yaml
+
+AFTER OPENING PRESS INSERT KEY THEN DEL KEY
+TO
+Delete all the content THEN PRESS INSERT
+& paste
 imports:
 - path: qwiklabs.jinja
 
@@ -62,6 +70,8 @@ resources:
   properties:
     zone: us-central1-a
 
+
+(FOR SAVE PRESS "ESC" KEY> THEN ENTER :WQ >THEN PRESS ENTER)
 
 NOW RUN THE BELOW COMMAND IN TERMINAL
 gcloud deployment-manager deployments create test --config=qwiklabs.yaml
