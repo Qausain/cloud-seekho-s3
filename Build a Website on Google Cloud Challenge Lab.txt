@@ -56,12 +56,20 @@ kubectl expose deployment products --type=LoadBalancer --port 80 --target-port 8
 Task 5: Configure the Frontend microservice
 
 cd ~/monolith-to-microservices/react-app
+kubectl get service products (Copy external ip & wirte down on notepad)
+kubectl get service orders (Copy external ip & wirte down on notepad)
+then open 
+
 nano .env
+& replace the url just like the below sample
+
+REACT_APP_ORDERS_URL=http://<ORDERS_IP_ADDRESS_ENTER_HERE>/api/orders
+REACT_APP_PRODUCTS_URL=http://<PRODUCTS_IP_ADDRESS_ENTER_HERE>/api/products
 
 
 
-kubectl get service products
-kubectl get service orders
+save the file
+npm run build
 ======================================================
 
 Task 6: Create a containerized version of the Frontend microservice
